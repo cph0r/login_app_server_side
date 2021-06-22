@@ -15,6 +15,7 @@ app.use(express.json())
 app.use(cookie_parser()) 
 app.use(cors({
     origin:['http:localhost:6600',
+    'https:localhost:6600',
     'https://heuristic-wilson-f0595b.netlify.app',
     'https://purpledocsinterviewloginapp.netlify.app',
     'http:localhost:3000',
