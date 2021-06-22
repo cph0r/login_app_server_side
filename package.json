@@ -1,5 +1,5 @@
 {
-    "scipts": {
+    "scripts": {
         "start": "node index",
         "dev": "nodemon index"
     },
