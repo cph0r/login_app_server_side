@@ -14,7 +14,7 @@ app.listen(PORT,()=> console.log('server started on port:', PORT));
 app.use(express.json()) 
 app.use(cookie_parser()) 
 app.use(cors({
-    origin:['http:localhost:6600','http:localhost:3000','https://hreokuloginapp.herokuapp.com/'],
+    origin:['http:localhost:6600','https://heuristic-wilson-f0595b.netlify.app','http:localhost:3000','https://hreokuloginapp.herokuapp.com'],
     credentials:true
 }))
 
