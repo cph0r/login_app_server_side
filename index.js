@@ -9,12 +9,12 @@ dotenv.config();
 
 // set up server
 const app = express();
-const PORT  = process.env.PORT || 5000;
+const PORT  = process.env.PORT || 6600;
 app.listen(PORT,()=> console.log('server started on port:', PORT));
 app.use(express.json()) 
 app.use(cookie_parser()) 
 app.use(cors({
-    origin:['http:localhost:3000','https://hreokuloginapp.herokuapp.com/'],
+    origin:['http:localhost:6600','http:localhost:3000','https://hreokuloginapp.herokuapp.com/'],
     credentials:true
 }))
 
