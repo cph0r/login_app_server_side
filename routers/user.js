@@ -99,7 +99,7 @@ router.get('/logout',async (req,res)=>{
 
 
 
-router.get('/loggedin',async (req,res)=>{
+router.get('/loggedIn',async (req,res)=>{
     try {
         const token = req.cookies.token;
         if(!token){

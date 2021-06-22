@@ -13,18 +13,20 @@ router.post('/',auth, async (req,res)=>{
     }
     catch(e){
         console.log(e)
+        res.status(500).send();
     }
 });
 
 
 // dashboard get
-router.post('/',auth, async (req,res)=>{
+router.get('/',auth, async (req,res)=>{
     try{
        const customers = await Customers.find();
        res.json(customers) 
     }
     catch(e){
         console.log(e)
+        res.status(500).send();
     }
 });
 
