@@ -5,4 +5,4 @@ const customerSchema = new mongoose.Schema({
 
 const Customer  = new mongoose.model("customer",customerSchema);
 
-module.exports = User; 
+module.exports = Customer; 

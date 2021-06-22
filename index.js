@@ -23,7 +23,7 @@ mongoose.connect(process.env.MDB_CONNECT,{
     useNewUrlParser:true,
     useUnifiedTopology:true,
 },(err)=>{
-    if(err) console.log(err);
+    if(err){ console.log(err)};
     console.log('Connected to DB') 
 })
 
