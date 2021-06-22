@@ -105,12 +105,11 @@ router.get('/loggedIn',async (req,res)=>{
         if(!token){
             return res.status(401).json({ errorMessage: 'Unautharized' });
         }
-        
         jwt.verify(token,process.env.JWT_KEY)
         res.send(true)
     } catch (e) {
         console.log(e)
-        res.send(false)
+        res.json(false)
     }
 })
     
