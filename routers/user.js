@@ -102,9 +102,7 @@ router.get('/logout',async (req,res)=>{
 router.get('/loggedIn',async (req,res)=>{
     try {
         const token = req.cookies.token;
-        if(!token){
-            return res.status(401).json({ errorMessage: 'Unautharized' });
-        }
+        if(!token){return res.json(false);}
         jwt.verify(token,process.env.JWT_KEY)
         res.send(true)
     } catch (e) {
